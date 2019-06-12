@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -168,14 +170,27 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DrzavasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KategorijaVozilasController.cs" />
+    <Compile Include="Controllers\KlijentsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NalogsController.cs" />
+    <Compile Include="Controllers\ProizvodjacsController.cs" />
+    <Compile Include="Controllers\VoziloesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Drzava.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KategorijaVozila.cs" />
+    <Compile Include="Models\Klijent.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Nalog.cs" />
+    <Compile Include="Models\Proizvodjac.cs" />
+    <Compile Include="Models\RentacarDBContext.cs" />
+    <Compile Include="Models\Vozilo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -239,6 +254,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Drzavas\Create.cshtml" />
+    <Content Include="Views\Drzavas\Delete.cshtml" />
+    <Content Include="Views\Drzavas\Details.cshtml" />
+    <Content Include="Views\Drzavas\Edit.cshtml" />
+    <Content Include="Views\Drzavas\Index.cshtml" />
+    <Content Include="Views\KategorijaVozilas\Create.cshtml" />
+    <Content Include="Views\KategorijaVozilas\Delete.cshtml" />
+    <Content Include="Views\KategorijaVozilas\Details.cshtml" />
+    <Content Include="Views\KategorijaVozilas\Edit.cshtml" />
+    <Content Include="Views\KategorijaVozilas\Index.cshtml" />
+    <Content Include="Views\Klijents\Create.cshtml" />
+    <Content Include="Views\Klijents\Delete.cshtml" />
+    <Content Include="Views\Klijents\Details.cshtml" />
+    <Content Include="Views\Klijents\Edit.cshtml" />
+    <Content Include="Views\Klijents\Index.cshtml" />
+    <Content Include="Views\Nalogs\Create.cshtml" />
+    <Content Include="Views\Nalogs\Delete.cshtml" />
+    <Content Include="Views\Nalogs\Details.cshtml" />
+    <Content Include="Views\Nalogs\Edit.cshtml" />
+    <Content Include="Views\Nalogs\Index.cshtml" />
+    <Content Include="Views\Proizvodjacs\Create.cshtml" />
+    <Content Include="Views\Proizvodjacs\Delete.cshtml" />
+    <Content Include="Views\Proizvodjacs\Details.cshtml" />
+    <Content Include="Views\Proizvodjacs\Edit.cshtml" />
+    <Content Include="Views\Proizvodjacs\Index.cshtml" />
+    <Content Include="Views\Voziloes\Create.cshtml" />
+    <Content Include="Views\Voziloes\Delete.cshtml" />
+    <Content Include="Views\Voziloes\Details.cshtml" />
+    <Content Include="Views\Voziloes\Edit.cshtml" />
+    <Content Include="Views\Voziloes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
