@@ -1,0 +1,66 @@
+﻿@model bojan3011_ppp_projekat.Models.Klijent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Klijent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Drzava.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Drzava.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prezime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojLD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojLD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojNVD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojNVD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojMVD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojMVD)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KlijentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
