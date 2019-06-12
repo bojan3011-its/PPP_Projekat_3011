@@ -1,0 +1,72 @@
+﻿@model bojan3011_ppp_projekat.Models.Vozilo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Vozilo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KategorijaVozila.Oznaka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KategorijaVozila.Oznaka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proizvodjac.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proizvodjac.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojRegistracije)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojRegistracije)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Godiste)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Godiste)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CenaPoDanu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CenaPoDanu)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
