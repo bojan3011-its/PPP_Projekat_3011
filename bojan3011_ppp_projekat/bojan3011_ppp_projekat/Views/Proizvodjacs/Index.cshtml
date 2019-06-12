@@ -1,0 +1,39 @@
+﻿@model IEnumerable<bojan3011_ppp_projekat.Models.Proizvodjac>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Drzava.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Naziv)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Drzava.Naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naziv)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProizvodjacId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProizvodjacId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProizvodjacId })
+        </td>
+    </tr>
+}
+
+</table>
