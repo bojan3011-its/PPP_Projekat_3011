@@ -1,0 +1,66 @@
+﻿@model bojan3011_ppp_projekat.Models.Vozilo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vozilo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KategorijaVozila.Oznaka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KategorijaVozila.Oznaka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proizvodjac.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proizvodjac.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojRegistracije)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojRegistracije)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Godiste)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Godiste)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CenaPoDanu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CenaPoDanu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VoziloId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
